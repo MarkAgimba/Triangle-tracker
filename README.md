@@ -6,6 +6,9 @@ Triangle-Tracker is an application I created as an Independent Project with the 
 Installation
 Install this Triangle-tracker-js by cloning this repository: https://markagimba.github.io/Triangle-tracker/
 
+Known-bugs
+The application is not able to formulate a return response for a 'Scalene Triangle'
+
 Contributions
 Issue Tracking: https://moringaschool.instructure.com/courses/14/assignments/11?module_item_id=266
 Source: https://moringaschool.instructure.com/courses/14/assignments/11?module_item_id=266
