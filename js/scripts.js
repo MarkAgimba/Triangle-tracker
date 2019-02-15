@@ -1,47 +1,34 @@
-var side1;
-var side2;
-var side3;
+var triangleType = function(sideA, sideB, sideC){
+  if (isTriangle(sideA, sideB, sideC)) {
+    if (sideA===sideB && sideB===sideC) {
+      return "equilateral";
+    } else if (sideA===sideB || sideA===sideB || sideC===sideB) {
+      return "isosceles";
+    } else {
+      return "scalene";
+    }
+  } else {
+    return "These sides do not a triangle make.";
+  }
+};
 
-var whatKindOfTriangle = function() {
-  if (sideA === sideB && sideA === sideC) {
-    return "equilateral";
-  }
-  else if (sideA === sideB || sideA === sideC || sideB === sideC){
-    return "isosceles";
-  }
-  else {
-    return "scalene";
-  }
-}
-var isItATriangle = function() {
-  if ( (sideA + sideB) <= sideC ) {
-      return "not a triangle";
-  }
-  else if ( (sideB + sideC) <= sideA ) {
-    return "not a triangle";
-  }
-  else if ( (sideA + sideC) <= sideB ) {
-    return "not a triangle";
-  }
-  else if (!(sideA) || !(sideB) || !(sideC)){
-    return "not a triangle. Please enter three numerical values greater than zero";
-  }
-  else {
-    return whatKindOfTriangle();
-  }
-}
-$(document).ready(function(){
-  $("form").submit(function(event){
+var isTriangle = function(sideA, sideB, sideC) {
+  return sideA <= (sideB + sideC) && sideB <= (sideC + sideA) && sideC <= (sideA + sideB)
+};
+
+$(document).ready(function() {
+  $("form#triangle").submit(function(event) {
+
+    var sideA = parseInt($("input#sideA").val());
+    var sideB = parseInt($("input#sideB").val());
+    var sideC = parseInt($("input#sideC").val());
+    var result = triangle(sideA, sideB, sideC);
+
+    sideA = parseInt($("input#sideA").val(""));
+    sideB = parseInt($("input#sideB").val(""));
+    sideC = parseInt($("input#sideC").val(""));
+
+    $("#result").append(result);
     event.preventDefault();
-    var result;
-
-    side1 = parseInt($("#sideA").val());
-    side2 = parseInt($("#sideB").val());
-    side3 = parseInt($("#sideC").val());
-
-    result = isItATriangle();
-
-    $("#type").text(result);
-    $(".output").show();
   });
 });
