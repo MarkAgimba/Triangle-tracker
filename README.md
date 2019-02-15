@@ -1,12 +1,12 @@
 Author: Mark Mugwere Agimba
 
 Description
-Triangle-Tracker is an application I created as an Independent Project with the aim that it will help one know whether a triangle is isosceles, equilateral, scalene or NOT a triangle at all..
+The M.M.A Triangle-Tracker is an application I created as an Independent Project with the aim that it will help one know whether a triangle is isosceles, equilateral, scalene or NOT a triangle at all.
 
 Installation
 Install this Triangle-tracker-js by cloning this repository: https://markagimba.github.io/Triangle-tracker/
 
-Known-bugs
+Known errors/bugs
 The application is not able to formulate a return response for a 'Scalene Triangle'
 
 Contributions
