@@ -6,6 +6,9 @@ The M.M.A Triangle-Tracker is an application I created as an Independent Project
 Installation
 Install this Triangle-tracker-js by cloning this repository: https://markagimba.github.io/Triangle-tracker/
 
+Technologies used
+JavaScript, CSS and HTML languages have been used in this application.
+
 Known errors/bugs
 The application is not able to formulate a return response for a 'Scalene Triangle'
 
