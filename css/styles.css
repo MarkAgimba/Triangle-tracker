@@ -16,13 +16,10 @@ body {
    background-color: red
    text-align: center;
 }
-:root {
-  --main-bg-color: coral;
-  --main-txt-color: blue;
-  --main-padding: 20px;
+.output {
+  display: none;
 }
-div {
-  background-color: var(--main-bg-color);
-  color: var(--main-txt-color);
-  padding: 20px;
+
+button {
+  margin-top: 10px;
 }

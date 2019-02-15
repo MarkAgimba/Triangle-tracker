@@ -1,18 +1,47 @@
-function check_getTriangles(){
-  var sideA = parseFloat(prompt("Enter Parameters for side A"));
-  var sideB = parseFloat(prompt("Enter Parameters for side B"));
-  var sideC = parseFloat(prompt("Enter Parameters for side C"));
+var side1;
+var side2;
+var side3;
 
-if(sideA===sideB && sideB===sideC && sideC===sideB){
-alert("Triangle is Equilateral ");
+var whatKindOfTriangle = function() {
+  if (sideA === sideB && sideA === sideC) {
+    return "equilateral";
+  }
+  else if (sideA === sideB || sideA === sideC || sideB === sideC){
+    return "isosceles";
+  }
+  else {
+    return "scalene";
+  }
 }
-else if(sideA===sideB || sideA===sideC || sideC===sideB){
-alert("Triangle is Isosceles");
+var isItATriangle = function() {
+  if ( (sideA + sideB) <= sideC ) {
+      return "not a triangle";
+  }
+  else if ( (sideB + sideC) <= sideA ) {
+    return "not a triangle";
+  }
+  else if ( (sideA + sideC) <= sideB ) {
+    return "not a triangle";
+  }
+  else if (!(sideA) || !(sideB) || !(sideC)){
+    return "not a triangle. Please enter three numerical values greater than zero";
+  }
+  else {
+    return whatKindOfTriangle();
+  }
 }
-else if((sideA+sideB)<= sideC || (sideA+sideC)<=sideB || (sideB+sideC)<=sideA)
-alert("Values don't match Triangle");
-}
-else{
-  alert("Triangle is Scalene");
-}
-}
+$(document).ready(function(){
+  $("form").submit(function(event){
+    event.preventDefault();
+    var result;
+
+    side1 = parseInt($("#sideA").val());
+    side2 = parseInt($("#sideB").val());
+    side3 = parseInt($("#sideC").val());
+
+    result = isItATriangle();
+
+    $("#type").text(result);
+    $(".output").show();
+  });
+});
