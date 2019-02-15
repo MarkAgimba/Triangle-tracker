@@ -6,3 +6,6 @@ function check_getTriangles(){
 if(sideA===sideB && sideB===sideC && sideC===sideB){
 alert("Triangle is Equilateral ");
 }
+else if(sideA===sideB || sideA===sideC && sideC===sideB){
+alert("Triangle is Isosceles");
+}
