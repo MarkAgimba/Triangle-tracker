@@ -1,4 +1,4 @@
-js/script.js
+js/scripts.js
 Author: Mark Mugwere Agimba
 
 Description
