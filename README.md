@@ -2,10 +2,10 @@ js/script.js
 Author: Mark Mugwere Agimba
 
 Description
-Triangle Tracker is an application I created as an Independent Project with the aim that it will help one know whether a triangle is isosceles, equilateral, scalene or NOT a triangle at all..
+Triangle-Tracker is an application I created as an Independent Project with the aim that it will help one know whether a triangle is isosceles, equilateral, scalene or NOT a triangle at all..
 
 Installation
-Install triangle-tracker-js by cloning this repository: https://markagimba.github.io/Triangle-tracker/
+Install this Triangle-tracker-js by cloning this repository: https://markagimba.github.io/Triangle-tracker/
 
 Contributions
 Issue Tracking: https://moringaschool.instructure.com/courses/14/assignments/11?module_item_id=266
