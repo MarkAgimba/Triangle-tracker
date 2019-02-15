@@ -1,4 +1,3 @@
-js/scripts.js
 Author: Mark Mugwere Agimba
 
 Description
@@ -15,4 +14,6 @@ Support
 If you have any issues using this Triangle-Tracker app, contact me on my email address: markaguero16@gmail.com
 
 License
-MIT License. Copyright 2018 Mark Mugwere Agimba
+MIT License.
+
+Copyright 2018 Mark Mugwere Agimba
