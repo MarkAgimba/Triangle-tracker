@@ -1,1 +1,22 @@
-
+H1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  font-family: fantasy;
+  color: var();
+  color : blue
+}
+H2 {
+  text-align: center;
+  color: var();
+  color: rgb(3, 0, 251);
+  font-size: 30px:
+  font-family: monospace;
+}
+body {
+   background-color: red
+   text-align: center;
+}
+div {
+  padding: 18px 44px;
+}
