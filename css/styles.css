@@ -2,8 +2,7 @@ H1 {
   font-weight: 400;
   text-align: center;
   font-size: 30px;
-  font-family: fantasy;
-  color: var();
+  font-family: Georgia,serif;
   color : blue
 }
 H2 {
@@ -17,6 +16,13 @@ body {
    background-color: red
    text-align: center;
 }
+:root {
+  --main-bg-color: coral;
+  --main-txt-color: blue;
+  --main-padding: 20px;
+}
 div {
-  padding: 18px 44px;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  padding: 20px;
 }
