@@ -4,13 +4,13 @@ function trackButton(){
   var C=document.getElementById("C").value;
 
   if(A===B && B===C && B===C){
-document.getElementById("result").innerHTML="This is an equilateral triangle"
+document.getElementById("result").innerHTML="This is an Equilateral triangle"
   }
   else if(A===B || A===C || C===B){
 document.getElementById("result").innerHTML="This is an Isosceles Triangle"
   }
   else if((A+B)<= C || (A+C)<=B || (B+C)<=A) {
-document.getElementById("result").innerHTML="This is not a Triangle"
+document.getElementById("result").innerHTML="This isn't a Triangle"
   }
   else{(A+B)>=C || (B+C)>=A || (C+A)>=B
 document.getElementById("result").innerHTML="This is a Scalene Triangle"
