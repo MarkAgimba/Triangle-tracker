@@ -12,3 +12,7 @@ alert("Triangle is Isosceles");
 else if((sideA+sideB)<= sideC || (sideA+sideC)<=sideB || (sideB+sideC)<=sideA)
 alert("Values don't match Triangle");
 }
+else{
+  alert("Triangle is Scalene");
+}
+}
