@@ -1,34 +1,18 @@
-var triangleType = function(sideA, sideB, sideC){
-  if (isTriangle(sideA, sideB, sideC)) {
-    if (sideA===sideB && sideB===sideC) {
-      return "equilateral";
-    } else if (sideA===sideB || sideA===sideB || sideC===sideB) {
-      return "isosceles";
-    } else {
-      return "scalene";
-    }
-  } else {
-    return "These sides do not a triangle make.";
+function trackButton(){
+  var A=document.getElementById("A").value;
+  var B=document.getElementById("B").value;
+  var C=document.getElementById("C").value;
+
+  if(A===B && B===C && B===C){
+document.getElementById("result").innerHTML="This is an equilateral triangle"
   }
-};
-
-var isTriangle = function(sideA, sideB, sideC) {
-  return sideA <= (sideB + sideC) && sideB <= (sideC + sideA) && sideC <= (sideA + sideB)
-};
-
-$(document).ready(function() {
-  $("form#triangle").submit(function(event) {
-
-    var sideA = parseInt($("input#sideA").val());
-    var sideB = parseInt($("input#sideB").val());
-    var sideC = parseInt($("input#sideC").val());
-    var result = triangle(sideA, sideB, sideC);
-
-    sideA = parseInt($("input#sideA").val(""));
-    sideB = parseInt($("input#sideB").val(""));
-    sideC = parseInt($("input#sideC").val(""));
-
-    $("#result").append(result);
-    event.preventDefault();
-  });
-});
+  else if(A===B || A===C || C===B){
+document.getElementById("result").innerHTML="This is an Isosceles Triangle"
+  }
+  else if((A+B)<= C || (A+C)<=B || (B+C)<=A) {
+document.getElementById("result").innerHTML="This is not a Triangle"
+  }
+  else{(A+B)>=C || (B+C)>=A || (C+A)>=B
+document.getElementById("result").innerHTML="This is a Scalene Triangle"
+  }
+  }

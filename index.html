@@ -1,35 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Triangle-Tracker</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>M.M.A Triangle-Tracker</title>
+     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
-    <h1>M.M.A TRIANGLE-TRACKER</h1>
-    <h2>Kindly enter the length values of the three sides of a triangle and after submission, the application will give a response telling what type of triangle the inputted values will produce, whether an isosceles, equilateral, scalene or NO triangle at all.!</h2>
-    <script src="js/scripts.js"></script>
-  <body background="images/bb.jpeg">
-    <div class="container">
-    <div class="row">
-      <div class="col-sm-3">
-
-        <div class="jumbotron">
-          <form id="triangle">
-            <div class="form-group">
-              <label for="sideA">Side A:</label>
-              <input id="sideA" type="text"><br>
-              <label for="sideB">Side B:</label>
-              <input id="sideB" type="text"><br>
-              <label for="sideC">Side C:</label>
-              <input id="sideC" type="text">
-            </div>
-            <button type="submit" class="btn btn-sm btn-primary">Answer</button>
-          </form>
-        </div>
-        <p id="result"></p>
-      </div>
-    </div>
-  </div>
-
-</body>
+  <body background="images/clo.jpeg">
+    <h1>M.M.A Triangle-Tracker</h1>
+  <form>
+    <br>
+    Side A:
+    <input type="number" id="A">
+    Side B:
+    <input type="number" id="B" >
+    Side C:
+    <input type="number" id="C" >
+    </br>
+      </form>
+    <button type="button" name="button" onclick="trackButton()">ENTER</button>
+    <h2 id="result"></h2>
+     <script src="js/scripts.js"></script>
+  </body>
 </html>
