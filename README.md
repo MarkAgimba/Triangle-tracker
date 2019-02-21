@@ -8,6 +8,9 @@ The M.M.A Triangle-Tracker is an application I created as an Independent Project
 Setup and Installation
 Install this Triangle-tracker-js by cloning this repository: https://markagimba.github.io/Triangle-tracker/
 
+BDD
+In software engineering, behavior-driven development (BDD) is a software development process that emerged from test-driven development (TDD).[1][2][3][vague] Behavior-driven development combines the general techniques and principles of TDD with ideas from domain-driven design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development.
+
 Technologies used
 JavaScript, CSS and HTML languages have been used in this application.
 
