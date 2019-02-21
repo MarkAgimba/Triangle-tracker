@@ -1,9 +1,11 @@
-Author: Mark Mugwere Agimba
+Triangle- Tracker
+(With this application on the website. we are able to identify the triangle type based on the values that have been inputted.) 
 
 Description
 The M.M.A Triangle-Tracker is an application I created as an Independent Project with the aim that it will help one know whether a triangle is isosceles, equilateral, scalene or NOT a triangle at all.
 
-Installation
+
+Setup and Installation
 Install this Triangle-tracker-js by cloning this repository: https://markagimba.github.io/Triangle-tracker/
 
 Technologies used
@@ -19,7 +21,8 @@ Source: https://moringaschool.instructure.com/courses/14/assignments/11?module_i
 Support
 If you have any issues using this Triangle-Tracker app, contact me on my email address: markaguero16@gmail.com
 
-License
-MIT License.
+Link to live site 
+{Triangle-tracker website}(https://markagimba.github.io/Triangle-tracker/)
 
-Copyright 2018 Mark Mugwere Agimba
+License and Copyright.
+MIT
